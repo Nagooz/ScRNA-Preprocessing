@@ -13,7 +13,7 @@ fi
 for file in "$path"/*.fq.gz; do
     filename=$(basename "$file")
     # Extract relevant parts, including lane and read direction
-    if [[ $filename =~ ^(ASC|F|FAP)_([0-9]+h|CTL)_L([0-9]+)_([0-9])\.fq\.gz$ ]]; then
+    if [[ $filename =~ ^(ASC|F|FAP)_([0-9]+h|CTL|Ctrl)_L([0-9]+)_([0-9])\.fq\.gz$ ]]; then
         timepoint="${BASH_REMATCH[2]}"
         lane=$(printf "%03d" ${BASH_REMATCH[3]})
         read_direction="${BASH_REMATCH[4]}"
