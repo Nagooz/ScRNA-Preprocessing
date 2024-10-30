@@ -4,7 +4,7 @@
 # Job Script
 #===================================================================
 
-#SBATCH -J Alignement_SCAT
+#SBATCH -J Alignement
 #SBATCH --export=ALL
 #SBATCH --ntasks=1 --cpus-per-task=16
 #SBATCH --no-requeue
