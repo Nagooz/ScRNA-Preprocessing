@@ -14,4 +14,3 @@ __velocity_10X__ :  the script quantifies spliced and unspliced mRNA in single-c
 ```bash
 git clone https://github.com/Nagooz/ScRNA-Preprocessing.git
 cd ScRNA-Preprocessing
-pip install -r requirements.txt
